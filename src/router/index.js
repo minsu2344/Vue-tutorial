@@ -12,6 +12,7 @@ const routes = [
     name: 'about',
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
+  // 데이터 바인딩
   {
     path: '/databinding/string',
     name: 'DataBindingStringView',
@@ -61,6 +62,25 @@ const routes = [
     path: '/databinding/style',
     name: 'DataBindingStyleView',
     component: () => import(/* webpackChunkName: "databiding", webpackPrefetch: true */ '../views/1_databinding/DataBindingStyleView.vue')
+  },
+  // 이벤트
+  {
+    path: '/event/click',
+    name: 'EventClick',
+    // webpackChunkName 변경
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch: true */ '../views/2_event/EventClickView.vue')
+  },
+  {
+    path: '/event/change',
+    name: 'EventChange',
+    // webpackChunkName 변경
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch: true */ '../views/2_event/EventChangeView.vue')
+  },
+  {
+    path: '/event/key',
+    name: 'EventKey',
+    // webpackChunkName 변경
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch: true */ '../views/2_event/EventKeyView.vue')
   }
 ]
 
