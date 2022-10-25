@@ -22,8 +22,8 @@ export default {
   }
 }
 </script>
-<!-- scope 넣어줘야 현재 파일에서만 스타일 적용 -->
-<style scope>
+<!-- scoped 넣어줘야 현재 파일에서만 스타일 적용 -->
+<style scoped>
 .active {
   background-color: greenyellow;
   font-weight: bold;
